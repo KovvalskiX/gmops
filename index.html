@@ -9,11 +9,16 @@
   			background-size: 100%;
   			box-sizing: border-box;
   		}
-  		#logo{
+  		.logo{
   			display: inline;
+  		}
+  		#gl{
+  			size: 80%;
+  		}
+  		#ml{
   			font-family: sans-serif;
   			color: #4e4e4e;
-  			font-size: 100px;
+  			font-size: 80px;
   			margin-right: 15px;
   		}
   		#press{
@@ -23,19 +28,20 @@
   			display: default;
   		}
   		@media (orientation: portrait) {
-  		html {
-  			background-size: 100% 500%;
-  		}
-  		#mops {
-  			size: 200%;
-    		display: contents;
+  			html {
+  				background-size: 100% 500%;
+  			}
+  			#mops {
+  				size: 200%;
+    			display: contents;
+  			}
   		}
   	</style>
     <title>Google Mops</title>
   </head>
   <body>
-  	<center><img width=100 heigth=100 src="src/gl.png"/>
-  	<p id="logo">MOPS</p>
+  	<center><img class="logo" id="gl" width=100 heigth=100 src="src/gl.png"/>
+  	<p class="logo" id="ml">MOPS</p>
 	<p id="press">Жми на мопса</p></center>
 	<div id="mops"><center><img width="300" height="300" src="src/mops.png"></center></div>
   
