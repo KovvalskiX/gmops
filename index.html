@@ -9,18 +9,34 @@
   			background-size: 100%;
   			box-sizing: border-box;
   		}
-  		.logo{
-  			display: inline;
+  		#logo {
+  			size: 120%;
+  		}
+  		/*#logo{
+  			border: 2px outset #f4e04e;
+  			border-radius: 10px;
+  			padding: 5px;
+  			width: ;
+  			background-color: #f4e04e;
   		}
   		#gl{
   			size: 80%;
+  			display: inline;
+  			margin-right: 10px;
   		}
   		#ml{
-  			font-family: sans-serif;
+  			display: inline;
+  			vertical-align: 32%;
+  			line-height: 80px;
+  			text-align: center;
+  			font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  			font-style: normal;
+  			font-variant: normal;
+  			font-weight: 700;
   			color: #4e4e4e;
   			font-size: 80px;
   			margin-right: 15px;
-  		}
+  		}*/
   		#press{
   			color: white;
   			font-family: sans-serif;
@@ -31,18 +47,22 @@
   			html {
   				background-size: 100% 500%;
   			}
-  			#mops {
-  				size: 200%;
-    			display: contents;
+  			#logo {
+  				max-width: 100%;
+  				position: center;
   			}
   		}
   	</style>
     <title>Google Mops</title>
   </head>
   <body>
-  	<center><img class="logo" id="gl" width=100 heigth=100 src="src/gl.png"/>
-  	<p class="logo" id="ml">MOPS</p>
-	<p id="press">Жми на мопса</p></center>
+  	<center>
+  		<!--<div id="logo">
+  			<img id="gl" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+  			<p id="ml">MOPS</p>
+  		</div>-->
+  		<img src="src/logo.png" id="logo"/>
+		<p id="press">Жми на мопса</p></center>
 	<div id="mops"><center><img width="300" height="300" src="src/mops.png"></center></div>
   
 	<audio id="mopsSnd">
