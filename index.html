@@ -5,7 +5,7 @@
   		html{
   			background-image: url(src/bg.jpg);
   			background-repeat: no-repeat;
-  			background-size: 120% 300%;
+  			background-size: 100%;
   			box-sizing: border-box;
   		}
   		#logo{
@@ -22,9 +22,13 @@
   			display: default;
   		}
   		@media (orientation: portrait) {
-  		mops {
+  		html {
+  			background-size: 100% 500%;
+  		}
+  		#mops {
     		width: 400px;
     		height: 400px;
+    		display: contents;
   		}
   	</style>
     <title>Google Mops</title>
